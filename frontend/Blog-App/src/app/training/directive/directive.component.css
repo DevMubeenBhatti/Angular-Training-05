@@ -1,0 +1,13 @@
+@import "../databinding/databinding.component.css";
+.red{
+	color: #fff;
+	background-color: red;
+}
+.green-color{
+	color: #fff;
+	background-color: green;
+}
+.blue{
+	color: #fff;
+	background-color: blue;
+}

@@ -1,0 +1,24 @@
+<div class="container-fluid px-0">
+	<mat-toolbar color="primary">
+		<!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+			<mat-icon>menu</mat-icon>
+		</button> -->
+		<button mat-icon-button (click)="toggleSidebar()">
+			<mat-icon>menu</mat-icon>
+		</button>
+		<span>Blog App</span>
+		<span class="example-spacer"></span>
+		<button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+			<mat-icon>favorite</mat-icon>
+		</button>
+		<button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" mat-button
+			[matMenuTriggerFor]="beforeMenu">
+			<mat-icon>share</mat-icon>
+		</button>
+		<mat-menu #beforeMenu="matMenu" xPosition="before">
+			<button mat-menu-item>Admin</button>
+			<button mat-menu-item>User</button>
+			<button mat-menu-item (click)="logout()">Logout</button>
+		</mat-menu>
+	</mat-toolbar>
+</div>

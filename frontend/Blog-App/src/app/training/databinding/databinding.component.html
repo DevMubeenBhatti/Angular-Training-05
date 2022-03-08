@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<mat-card class="mt-3">
+				<h3>1 String interpluation</h3>
+				<p>{{myName}}</p>
+			</mat-card>
+			<mat-card class="mt-3">
+				<h3>2 propertiry Binding</h3>
+				<img [src]="imgPorperBinding" alt="propertyBinding">
+			</mat-card>
+			<mat-card class="mt-3">
+				<h3>3 Event Binding</h3>
+				<div>
+					<label for="">Enter text : </label>
+					<!-- <input type="text" (input)="userName=$event.target.value"> -->
+					<input type="text">
+					<p>Restul: {{userName}}</p>
+				</div>
+			</mat-card>
+			<mat-card class="mt-3">
+				<h3>4 Two way Binding</h3>
+				<label for="">Enter Text : </label>
+				<input type="text" placeholder="enter default text" [(ngModel)]="resultTwoBinding">
+				<br>
+				<p>Restult: {{resultTwoBinding}}</p>
+			</mat-card>
+			<mat-card class="mt-3">
+				<h3>5 Data Binding Two way Example</h3>
+				<label for="">Enter Text : </label>
+				<input type="text" placeholder="enter default text" [(ngModel)]="defaultValue">
+				<br>
+				<p>Restult: {{defaultValue}}</p>
+				<button class="btn btn-primary" [disabled]="isDisable" (click)="onSubmit()">submit</button>
+			</mat-card>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+@import "../../home/home.component.css";
+.page__content-data{
+	width: 97%;
+}
+.card{
+	position: relative;
+	height: 465px !important;
+	overflow-y: scroll;
+}
+table{
+	width: 100% !important;
+}
+table th {
+	font-size: 14px;
+}
+table td{
+	font-size: 12px;
+}

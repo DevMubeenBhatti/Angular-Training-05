@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "6c26d706-d64e-44d9-94a7-45d10bded08c",
+		"name": "BlogApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetBlogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/blogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"mubeen\",\r\n    \"email\":\"sadsan@sad.com\",\r\n    \"password\":\"12345asd\",\r\n    \"active\": true \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"mubeen\",\r\n    \"email\":\"sadsan@sad.com\",\r\n    \"password\":\"12345asd\",\r\n    \"active\": true \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"mubeen\",\r\n    \"email\":\"sadsan@sad.com\",\r\n    \"password\":\"12345asd\",\r\n    \"active\": true \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBlog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"blogID\": 1,\r\n        \"title\": \"asdfasd\",\r\n        \"description\": \"sadfsadf\",\r\n        \"content\": \"sdfusdnfjkdsnf\",\r\n        \"active\": false,\r\n        \"user\": {\r\n            \"userID\": 1,\r\n            \"name\": \"aneeq\",\r\n            \"email\": \"andsfo@sad.com\",\r\n            \"password\": \"12345\",\r\n            \"active\": true\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/blogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBlog",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"blogID\": 1,\r\n        \"title\": \"asdfasd\",\r\n        \"description\": \"sadfsadf\",\r\n        \"content\": \"sdfusdnfjkdsnf\",\r\n        \"active\": false,\r\n        \"user\": {\r\n            \"userID\": 1,\r\n            \"name\": \"aneeq\",\r\n            \"email\": \"andsfo@sad.com\",\r\n            \"password\": \"12345\",\r\n            \"active\": true\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/blogs/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBlog",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"blogID\": 1,\r\n        \"title\": \"asdfasd\",\r\n        \"description\": \"sadfsadf\",\r\n        \"content\": \"sdfusdnfjkdsnf\",\r\n        \"active\": false,\r\n        \"user\": {\r\n            \"userID\": 1,\r\n            \"name\": \"aneeq\",\r\n            \"email\": \"andsfo@sad.com\",\r\n            \"password\": \"12345\",\r\n            \"active\": true\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/blogs/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,33 @@
+npm install -g @angular/cli
+
+ng help
+ng generate --help
+
+ng new my-first-project
+cd my-first-project
+ng serve
+
+ng generate component xyz
+ng add @angular/material
+ng add @angular/pwa
+ng add _____
+ng test
+ng build
+ng g c login
+ng g s share/login
+ng generate service backendApi/blogs
+
+ng g m material
+
+
+ng add @angular/material
+npm i --save @fortawesome/fontawesome-free
+npm install jquery
+npm install bootstrap
+
+https://www.npmjs.com/package/ngx-toastr
+npm install ngx-toastr --save
+npm install @angular/animations --save
+
+
+

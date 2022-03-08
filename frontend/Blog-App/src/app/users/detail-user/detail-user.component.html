@@ -1,0 +1,35 @@
+<div class="container-fluid page">
+	<div class="d-flex page__box p-3">
+		<h2>employeeDetails</h2>
+	</div>
+	<div class="page__content shadow p-3 position-relative">
+		<div class="page__content-data position-absolute">
+			<div class="d-flex justify-content-between">
+				<h6 class="text-start">Employee Details</h6>
+				<button class="btn btn-sm btn-primary" (click)="userList()"><i class="fa-solid fa-arrow-left"></i> Back</button>
+			</div>
+			<div class="card">
+				<table class="table">
+					<thead>
+					  <tr>
+						<th scope="col">Id</th>
+						<th scope="col">Name:</th>
+						<th scope="col">Email:</th>
+						<th scope="col">Password:</th>
+						<th scope="col">Status:</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>{{user.userID}}</td>
+						<td>{{user.name}}</td>
+						<td>{{user.email}}</td>
+						<td>{{user.password}}</td>
+						<td>{{user.active}}</td>
+					  </tr>
+					</tbody>
+				  </table>
+			</div>
+		</div>
+	</div>
+</div>
